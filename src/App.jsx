@@ -1,3 +1,5 @@
+import WeatherForecast from "./components/WeatherForcast/WeatherForecast";
+
 const weatherForecasts = [
   {
     day: 'Mon',
@@ -36,13 +38,12 @@ const weatherForecasts = [
   },
 ];
 
-const App = () => {
-
+function App() {
   return (
     <>
       <h1>Local Weather</h1>
       <section>
-        // Weather data here
+        <WeatherForecast weatherForcast={weatherForecasts}/>
       </section>
     </>
 
